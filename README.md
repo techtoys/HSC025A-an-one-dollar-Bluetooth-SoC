@@ -126,7 +126,7 @@ HSC025A communicates with an external system (e.g. an MCU) by UART (Universal As
 | `param2`     | 2nd parameter (optional)                                     |
 | `0xEF`       | End of transmission (ETX)                                    |
 
-The communication is a bidirectional data flow with equal priority as the data sender between HSC025A and the MCU. That means it is possible for you to program the MCU to transmit a command to HSC025A and get replies from it or, HSC025A initiates the communication by sending over its status and parameters to the MCU on an external trigger.
+The communication is a bidirectional data flow with equal priority: that means it is possible for you to program the MCU to transmit a command to HSC025A and get replies from it or, HSC025A initiates the communication by sending over its status and parameters to the MCU on an external trigger.
 
 **Example 1: The MCU sets HSC025A to Bluetooth mode**
 
@@ -146,7 +146,7 @@ Sequence diagram:
 
 ![](Images/sequenceDiagram_setBluetooth.png)
 
-Sequence diagram above may keep rolling if there are more activities coming up. For example, an incoming call during music playback will trigger HSC025A to send `7E 03 50 29 EF` to indicate a phone call with `param1=0x29` followed by `7E 03 50 2A EF` to resume music playback `(param1=0x2A)` when the call ends.
+Sequence above may keep rolling if there are more activities coming up. For example, an incoming call during music playback will trigger HSC025A to send `7E 03 50 29 EF` to indicate a phone call with `param1=0x29` followed by `7E 03 50 2A EF` to resume music playback `(param1=0x2A)` when the call ends.
 
 **Example 2: User clicks and holds on the Volume-up key (via a resistor network wired to ADKEY pin) on HSC025A, in music playback mode**
 
