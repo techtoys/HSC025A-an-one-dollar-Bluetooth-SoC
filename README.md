@@ -208,7 +208,12 @@ Sequence diagram:
 
 ### Commands valid in mode of USB Mass Storage / SD card only
 
-1) Automatic playback from an USB/SD media when it is slot in, in the order of the files in FAT/FAT32's file table. How files are sorted in a file system is more complex than we have thought. Interested readers may visit https://www.codeproject.com/Articles/95721/FAT-32-Sorter or https://superuser.com/questions/376577/how-to-reorder-the-files-of-a-fat32-file-system for further information<br>2) Format media in FAT or FAT32. No NTFS is allowed.<br>3) Supported file formats: MP3/WAV/WMA/FLAC/APE<br>4) Filenames in both ASCII and Unicode formats are supported<br>5) Both short and long filenames are supported<br>6) Comply with the following folder and filename conventions if you want to play designated audio files with UART commands:<br>
+1) Automatic playback from an USB/SD media when it is slot in, in the order of the files in FAT/FAT32's file table. How files are sorted in a file system is more complex than we have thought. Interested readers may visit https://www.codeproject.com/Articles/95721/FAT-32-Sorter or https://superuser.com/questions/376577/how-to-reorder-the-files-of-a-fat32-file-system for further information<br>
+2) Format media in FAT or FAT32. No NTFS is allowed.<br>
+3) Supported file formats: MP3/WAV/WMA/FLAC/APE<br>
+4) Filenames in both ASCII and Unicode formats are supported<br>
+5) Both short and long filenames are supported<br>
+6) Comply with the following folder and filename conventions if you want to play designated audio files with UART commands:<br>
 
 - append a 4-digit prefix, e.g. 0001, 0002, 4678 say, for files in the root directory<br>
 - use a 3-digit folder name, e.g. 002, 232<br>![](.\Images\Root_folder.png)
