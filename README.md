@@ -146,6 +146,7 @@ Explanation:
 https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil/related**
 
 Sequence diagram:
+![](Images/sequenceDiagram_setBluetooth.png)
 ```mermaid
 sequenceDiagram
 	autonumber
