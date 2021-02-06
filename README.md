@@ -143,7 +143,6 @@ Explanation:
 | `0xEF`      | ETX                                                          |
 
 Sequence diagram:
-
 ```mermaid
 sequenceDiagram
 	autonumber
