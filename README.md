@@ -141,6 +141,7 @@ Explanation:
 | `0x0D`      | Command to switch operation mode                             |
 | `0x04`      | Bluetooth mode  (param1=0x04 for Bluetooth, no param2 required) |
 | `0xEF`      | ETX                                                          |
+
 Sequence diagram:
 
 ![](Images/sequenceDiagram_setBluetooth.png)
