@@ -146,7 +146,6 @@ Sequence diagram:
 
 ```mermaid
 sequenceDiagram
-	autonumber
 	participant MCU
 	participant HSC025A
 	MCU->>HSC025A: 7E 03 0D 04 EF
