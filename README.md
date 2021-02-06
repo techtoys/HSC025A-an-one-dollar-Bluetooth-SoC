@@ -216,8 +216,14 @@ Sequence diagram:
 6) Comply with the following folder and filename conventions if you want to play designated audio files with UART commands:<br>
 
 - append a 4-digit prefix, e.g. 0001, 0002, 4678 say, for files in the root directory<br>
-- use a 3-digit folder name, e.g. 002, 232<br>![](.\Images\Root_folder.png)
-- append a 3-digit prefix in the range of 000 - 255 for files in all folders<br>![](.\Images\Folder_002.png)![](.\Images\Folder_232.png)<br>
+- use a 3-digit folder name, e.g. 002, 232
+
+![](./Images/Root_folder.png)
+
+- append a 3-digit prefix in the range of 000 - 255 for files in all folders
+
+![](./Images/Folder_002.png)
+![](./Images/Folder_232.png)
 
 7) Sequential command is allowed, e.g. it is allowed to send over `7E 04 42 02 08 EF 7E 04 42 02 09 EF` to preemptive playback two voice files 008.wav and 009.wav from the folder `/002`<br>
 
