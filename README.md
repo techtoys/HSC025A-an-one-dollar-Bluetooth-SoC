@@ -146,11 +146,12 @@ Sequence diagram:
 
 ```mermaid
 sequenceDiagram
-	participant MCU
-	participant HSC025A
-	MCU->>HSC025A: 7E 03 0D 04 EF
-	Note over HSC025A: HSC025A echoes with cmd=0x0C to get current mode of operation with len=3, param1=0x04 (Bluetooth)
-    HSC025A->>MCU: 7E 03 0C 04 EF
+autonumber
+participant MCU
+participant HSC025A
+MCU->>HSC025A: 7E 03 0D 04 EF
+Note over HSC025A: HSC025A echoes with cmd=0x0C to get current mode of operation with len=3, param1=0x04 (Bluetooth)
+   HSC025A->>MCU: 7E 03 0C 04 EF
     Note over HSC025A: Bluetooth status updated with cmd=0x50 and param1=0x26 (waiting for connection)
     HSC025A->>MCU: 7E 03 50 26 EF
     Note over HSC025A: Pending a Bluetooth paring instruction from the smartphone
