@@ -141,8 +141,10 @@ Explanation:
 | `0x0D`      | Command to switch operation mode                             |
 | `0x04`      | Bluetooth mode  (param1=0x04 for Bluetooth, no param2 required) |
 | `0xEF`      | ETX                                                          |
+Sequence diagram:
 
 ![](Images/sequenceDiagram_setBluetooth.png)
+
 Sequence diagram above may keep rolling if there are more activities coming up. For example, an incoming call during music playback will trigger HSC025A to send `7E 03 50 29 EF` to indicate a phone call with `param1=0x29` followed by `7E 03 50 2A EF` to resume music playback `(param1=0x2A)` when the call ends.
 
 **Example 2: User clicks and holds on the Volume-up key (via a resistor network wired to ADKEY pin) on HSC025A, in music playback mode**
@@ -159,7 +161,10 @@ Explanation:
 | `param1`        | `param1 = 0x06, 0x07, 0x08` as volume increases |
 | `0xEF`          | ETX                                             |
 
+Sequence diagram:
+
 ![](Images/sequenceDiagram_volUp.png)
+
 ## Command Table
 
 ### Public Commands
@@ -332,9 +337,7 @@ To a developer of embedded systems like you and me, perhaps the most exciting ex
 
 ## What's next?
 
-Add frequency response data and life tests
-
-
+Add frequency response data and live tests
 
 ## Schematic of a Reference Design
 
