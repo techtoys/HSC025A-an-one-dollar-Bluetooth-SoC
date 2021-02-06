@@ -364,19 +364,7 @@ To a developer of embedded systems like you and me, perhaps the most exciting ex
 
 ## What's next?
 
-RSSI @200mm
-
-1.3nH 2.7pF	-46dbm
-
-1.6nH 2.7pF	-45dbm
-
-1.8nH 2.7pF	-46dbm
-
-1.2nH 2.7pF	-46dbm
-
-0R		2.7pF	-43dbm
-
-Standard EVK -41dbm
+Add frequency response data and life tests
 
 
 
