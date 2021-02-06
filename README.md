@@ -142,6 +142,9 @@ Explanation:
 | `0x04`      | Bluetooth mode  (param1=0x04 for Bluetooth, no param2 required) |
 | `0xEF`      | ETX                                                          |
 
+**Note: You may need to enable mermaid diagram rendering in your browser (Chrome) to view sequence diagrams from:<br>
+https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil/related**
+
 Sequence diagram:
 ```mermaid
 sequenceDiagram
