@@ -145,21 +145,10 @@ Explanation:
 Sequence diagram:
 
 ```mermaid
-sequenceDiagram
 autonumber
 participant MCU
 participant HSC025A
 MCU->>HSC025A: 7E 03 0D 04 EF
-Note over HSC025A: HSC025A echoes with cmd=0x0C to get current mode of operation with len=3, param1=0x04 (Bluetooth)
-   HSC025A->>MCU: 7E 03 0C 04 EF
-    Note over HSC025A: Bluetooth status updated with cmd=0x50 and param1=0x26 (waiting for connection)
-    HSC025A->>MCU: 7E 03 50 26 EF
-    Note over HSC025A: Pending a Bluetooth paring instruction from the smartphone
-    HSC025A->>HSC025A: waiting
-    Note over HSC025A: Bluetooth connection is accepted, Bluetooth status updated with cmd=0x50 and param1=0x28 (connected,no music/phone call)
-    HSC025A->>MCU: 7E 03 50 28 EF
-    Note over HSC025A: On music/YouTube playback, Bluetooth status is updated with cmd=0x50 and param1=0x2A (music playback)
-    HSC025A->>MCU: 7E 03 50 2A EF
 ```
 
 Sequence diagram above may keep rolling if there are more activities coming up. For example, an incoming call during music playback will trigger HSC025A to send `7E 03 50 29 EF` to indicate a phone call with `param1=0x29` followed by `7E 03 50 2A EF` to resume music playback `(param1=0x2A)` when the call ends.
