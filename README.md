@@ -142,10 +142,6 @@ Explanation:
 | `0x04`      | Bluetooth mode  (param1=0x04 for Bluetooth, no param2 required) |
 | `0xEF`      | ETX                                                          |
 
-**Note: You may need to enable mermaid diagram rendering in your browser (Chrome) to view sequence diagrams from:<br>
-https://chrome.google.com/webstore/detail/mermaid-diagrams/phfcghedmopjadpojhmmaffjmfiakfil/related**
-
-Sequence diagram:
 ![](Images/sequenceDiagram_setBluetooth.png)
 Sequence diagram above may keep rolling if there are more activities coming up. For example, an incoming call during music playback will trigger HSC025A to send `7E 03 50 29 EF` to indicate a phone call with `param1=0x29` followed by `7E 03 50 2A EF` to resume music playback `(param1=0x2A)` when the call ends.
 
@@ -163,7 +159,6 @@ Explanation:
 | `param1`        | `param1 = 0x06, 0x07, 0x08` as volume increases |
 | `0xEF`          | ETX                                             |
 
-Sequence diagram:
 ![](Images/sequenceDiagram_volUp.png)
 ## Command Table
 
