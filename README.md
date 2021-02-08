@@ -337,7 +337,7 @@ To a developer of embedded systems like you and me, perhaps the most exciting ex
 
    ![](./Images/YAT_Settings_Uncheck_ASCII_Control.png)
 
-7. Now, in the **Send Text** box, try the first command `\h (7E 03 0D 04 EF)` and click **Send Text (F3)** button. On the Monitor window you see will the command your sent (Tx) in blue and commands returned (Rx) in purple like screen capture below.
+7. Now, in the **Send Text** box, try the first command `\h (7E 03 0D 04 EF)` and click **Send Text (F3)** button. On the Monitor window you see will the command your sent (Tx) in blue and commands returned (Rx) in purple like screen capture below (don't forget to click on the **16** button to display characters in hex format.)
 
    ![](./Images/YAT_Terminal_BT_connection_request.png)
 
